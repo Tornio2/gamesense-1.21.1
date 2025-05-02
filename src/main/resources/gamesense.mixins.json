@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.gamesense.client.mixin",
+	"package": "com.gamesense.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

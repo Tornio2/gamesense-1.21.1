@@ -1,4 +1,4 @@
-package com.gamesense.client.mixin;
+package com.gamesense.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
