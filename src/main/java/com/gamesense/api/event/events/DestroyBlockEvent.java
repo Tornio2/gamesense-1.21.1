@@ -5,7 +5,6 @@ import net.minecraft.util.math.BlockPos;
 
 
 public class DestroyBlockEvent extends GameSenseEvent {
-
     private BlockPos blockPos;
 
     public DestroyBlockEvent(BlockPos blockPos) {
