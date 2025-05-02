@@ -29,5 +29,8 @@
     "MixinRenderPlayer",
     "MixinWorld",
     "accessor.AccessorEntityPlayerSP"
+  ],
+  "client": [
+    "accessors.MinecraftClientAccessor"
   ]
 }
