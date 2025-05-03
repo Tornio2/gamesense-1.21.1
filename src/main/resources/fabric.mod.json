@@ -5,7 +5,8 @@
 	"name": "Gamesense",
 	"description": "Gamesense rewrite for Minecraft Fabric 1.21.1",
 	"authors": [
-		"Me!"
+		"Tornio",
+		"Gamesense Team"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,7 +17,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.gamesense.client.Gamesense"
+			"com.gamesense.client.GameSense"
+		],
+		"preLaunch": [
+			"com.gamesense.client.GameSensePreLaunch"
 		],
 		"fabric-datagen": [
 			"com.gamesense.client.GamesenseDataGenerator"

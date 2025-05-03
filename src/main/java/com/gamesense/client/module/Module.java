@@ -6,8 +6,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.util.List;
 
-import me.zero.alpine.listener.Listenable;
-import org.lwjgl.input.Keyboard;
+import com.gamesense.api.listener.Listenable;
+import org.lwjgl.glfw.GLFW;
 
 import com.gamesense.api.event.events.RenderEvent;
 import com.gamesense.api.setting.SettingsManager;
@@ -21,11 +21,11 @@ import com.gamesense.api.util.render.GSColor;
 import com.gamesense.client.GameSense;
 import com.gamesense.client.module.modules.gui.ColorMain;
 
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.MinecraftClient; // client.Minecraft -> MinecraftClient
 
 public abstract class Module implements Listenable {
 
-    protected static final Minecraft mc = Minecraft.getMinecraft();
+    protected static final MinecraftClient mc = MinecraftClient.getInstance();
 
     @Retention(RetentionPolicy.RUNTIME)
     @Target(ElementType.TYPE)
@@ -36,7 +36,9 @@ public abstract class Module implements Listenable {
 
         int priority() default 0;
 
-        int bind() default Keyboard.KEY_NONE;
+//        int bind() default Keyboard.KEY_NONE;
+        int bind() default GLFW.GLFW_KEY_UNKNOWN;
+
 
         boolean enabled() default false;
 

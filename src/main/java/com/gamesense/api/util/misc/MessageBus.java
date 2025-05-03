@@ -3,6 +3,7 @@ package com.gamesense.api.util.misc;
 import com.gamesense.client.module.ModuleManager;
 import com.gamesense.client.module.modules.hud.Notifications;
 //import com.mojang.realmsclient.gui.ChatFormatting;
+import net.minecraft.network.message.LastSeenMessageList;
 import net.minecraft.util.Formatting;
 
 //import net.minecraft.client.Minecraft;
@@ -13,6 +14,8 @@ import net.minecraft.network.packet.c2s.play.ChatMessageC2SPacket;
 
 //import net.minecraft.util.text.TextComponentString;
 import net.minecraft.text.Text;
+
+import java.time.Instant;
 
 
 /**
@@ -74,6 +77,8 @@ public class MessageBus {
      * Sends a server-sided message
      **/
     public static void sendServerMessage(String message) {
-        mc.player.networkHandler.sendPacket(new ChatMessageC2SPacket(message, null, null));
+        // I HAVE NO FUCKING IDEA THIS IS MAKING ME MAD
+        //mc.player.networkHandler.sendPacket(new ChatMessageC2SPacket(message, Instant.now(), 1, null, new LastSeenMessageList.Acknowledgment(LastSeenMessageList.EMPTY)));
+        mc.getNetworkHandler().sendChatMessage(message);
     }
 }
