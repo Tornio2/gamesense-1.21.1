@@ -7,8 +7,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import com.gamesense.client.GameSense;
-import com.lukflug.panelstudio.component.IFixedComponent;
-import com.lukflug.panelstudio.theme.ITheme;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.IFixedComponent;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.ITheme;
 
 
 public abstract class HUDModule extends Module {

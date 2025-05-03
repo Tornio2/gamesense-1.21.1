@@ -1,6 +1,6 @@
 package com.gamesense.client.clickgui;
 
-import java.awt.Point;
+import java.awt.*;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,14 +10,15 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.config.IConfigList;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.config.IPanelConfig;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
-import com.lukflug.panelstudio.config.IConfigList;
-import com.lukflug.panelstudio.config.IPanelConfig;
 
 public class GuiConfig implements IConfigList {
 
@@ -128,6 +129,26 @@ public class GuiConfig implements IConfigList {
                 return panelOpenObject.getAsBoolean();
             }
             return false;
+        }
+
+        @Override
+        public void saveSize(Dimension size) {
+            configObject.add("Width", new JsonPrimitive(size.width));
+            configObject.add("Height", new JsonPrimitive(size.height));
+        }
+
+        @Override
+        public Dimension loadSize() {
+            Dimension dimension = new Dimension(100, 100); // Default size if not found
+            JsonElement panelWidthObject = configObject.get("Width");
+            if (panelWidthObject != null && panelWidthObject.isJsonPrimitive()) {
+                dimension.width = panelWidthObject.getAsInt();
+            }
+            JsonElement panelHeightObject = configObject.get("Height");
+            if (panelHeightObject != null && panelHeightObject.isJsonPrimitive()) {
+                dimension.height = panelHeightObject.getAsInt();
+            }
+            return dimension;
         }
     }
 }

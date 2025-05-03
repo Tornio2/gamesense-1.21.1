@@ -10,7 +10,9 @@
 	},
 	"client": [
 		"GameSenseMixinLoader",
-		"mixins.accessors.MinecraftClientAccessor",
-		"mixins.accessors.AccessorEntityPlayerSP"
+		"mixins.MixinRenderTickCounter",
+		"mixins.MixinTimer",
+		"mixins.accessors.AccessorEntityPlayerSP",
+		"mixins.accessors.MinecraftClientAccessor"
 	]
 }

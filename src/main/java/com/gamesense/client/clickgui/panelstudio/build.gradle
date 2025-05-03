@@ -1,0 +1,12 @@
+package com.gamesense.client.clickgui.panelstudio
+
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			pom {
+				name = "PanelStudio"
+				description = "An extensible and customizable GUI API/library to create ClickGUIs, HUDEditors and TabGUIs designed for use in Minecraft utility mods."
+			}
+		}
+	}
+}

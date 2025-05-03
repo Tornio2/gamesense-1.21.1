@@ -1,6 +1,7 @@
 package com.gamesense.api.util.world;
 
 import com.gamesense.api.util.player.social.SocialManager;
+import com.gamesense.mixin.mixins.accessors.TimerAccessor;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
@@ -70,12 +71,16 @@ public class EntityUtil {
     }
 
     public static void setTimer(float speed) {
-        MinecraftClient.getInstance().timer.tickLength = 50.0f / speed;
+//        TimerAccessor.setTickLength(50.0f / speed);
+        TimerAccessor.setTimerSpeed(speed);
+
     }
 
     public static void resetTimer() {
-        MinecraftClient.getInstance().timer.tickLength = 50;
+//        TimerAccessor.setTickLength(50.0f);
+        TimerAccessor.resetTimer();
     }
+
 
     public static Vec3d getInterpolatedAmount(Entity entity, double ticks) {
         return getInterpolatedAmount(entity, ticks, ticks, ticks);

@@ -36,8 +36,20 @@ dependencies {
 	include 'com.github.ZeroMemes:Alpine:3.1.0'
 	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 
-	implementation 'com.github.lukflug:PanelStudio:0.2.0-SNAPSHOT'
+	// Losing my shit
+//	implementation 'com.github.lukflug:PanelStudio:v1.9.0'
 //	implementation 'com.lukflug:panelstudio-panelstudio-mc20-0.2.4'
+//	implementation 'com.github.lukflug:PanelStudio:panelstudio-0.2.4'
+//	implementation 'com.github.lukflug:panelstudio:v2.4.0'
+//	implementation 'com.github.lukflug:panelstudio:2.4.0'
+//	implementation 'com.lukflug:PanelStudio:v2.4.0'
+//	implementation 'com.lukflug:PanelStudio:2.4.0'
+//	implementation 'com.lukflug:panelstudio:panelstudio-0.2.4'
+
+
+
+//	implementation files('libs/panelstudio-0.2.4.jar')
+
 
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
