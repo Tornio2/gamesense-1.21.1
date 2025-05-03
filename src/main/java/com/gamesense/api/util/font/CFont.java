@@ -1,6 +1,7 @@
 package com.gamesense.api.util.font;
 
 //import net.minecraft.client.texture.DynamicTexture;
+import net.minecraft.client.texture.AbstractTexture;
 import net.minecraft.client.texture.NativeImage;
 import net.minecraft.client.texture.NativeImageBackedTexture;
 
@@ -19,7 +20,7 @@ public class CFont {
     protected boolean fractionalMetrics;
     protected int fontHeight = -1;
     protected int charOffset = 0;
-    protected NativeImageBackedTexture tex;
+    protected AbstractTexture tex;
 
     public CFont(Font font, boolean antiAlias, boolean fractionalMetrics) {
         this.font = font;
@@ -28,7 +29,7 @@ public class CFont {
         tex = setupTexture(font, antiAlias, fractionalMetrics, this.charData);
     }
 
-    protected NativeImageBackedTexture setupTexture(Font font, boolean antiAlias, boolean fractionalMetrics, CharData[] chars) {
+    protected AbstractTexture setupTexture(Font font, boolean antiAlias, boolean fractionalMetrics, CharData[] chars) {
         BufferedImage img = generateFontImage(font, antiAlias, fractionalMetrics, chars);
         try {
             // Convert BufferedImage to NativeImage

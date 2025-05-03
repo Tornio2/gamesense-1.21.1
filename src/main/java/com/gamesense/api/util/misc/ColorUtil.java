@@ -1,8 +1,9 @@
 package com.gamesense.api.util.misc;
 
 import com.gamesense.api.setting.values.ModeSetting;
-import com.mojang.realmsclient.gui.ChatFormatting;
-import net.minecraft.util.text.TextFormatting;
+//import com.mojang.realmsclient.gui.ChatFormatting;
+//import net.minecraft.util.text.TextFormatting;
+import net.minecraft.util.Formatting;
 
 import java.awt.*;
 import java.util.Arrays;
@@ -12,106 +13,106 @@ public class ColorUtil {
 
     public static List<String> colors = Arrays.asList("Black", "Dark Green", "Dark Red", "Gold", "Dark Gray", "Green", "Red", "Yellow", "Dark Blue", "Dark Aqua", "Dark Purple", "Gray", "Blue", "Aqua", "Light Purple", "White");
 
-    public static TextFormatting settingToTextFormatting(ModeSetting setting) {
+    public static Formatting settingToTextFormatting(ModeSetting setting) {
         if (setting.getValue().equalsIgnoreCase("Black")) {
-            return TextFormatting.BLACK;
+            return Formatting.BLACK;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Green")) {
-            return TextFormatting.DARK_GREEN;
+            return Formatting.DARK_GREEN;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Red")) {
-            return TextFormatting.DARK_RED;
+            return Formatting.DARK_RED;
         }
         if (setting.getValue().equalsIgnoreCase("Gold")) {
-            return TextFormatting.GOLD;
+            return Formatting.GOLD;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Gray")) {
-            return TextFormatting.DARK_GRAY;
+            return Formatting.DARK_GRAY;
         }
         if (setting.getValue().equalsIgnoreCase("Green")) {
-            return TextFormatting.GREEN;
+            return Formatting.GREEN;
         }
         if (setting.getValue().equalsIgnoreCase("Red")) {
-            return TextFormatting.RED;
+            return Formatting.RED;
         }
         if (setting.getValue().equalsIgnoreCase("Yellow")) {
-            return TextFormatting.YELLOW;
+            return Formatting.YELLOW;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Blue")) {
-            return TextFormatting.DARK_BLUE;
+            return Formatting.DARK_BLUE;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Aqua")) {
-            return TextFormatting.DARK_AQUA;
+            return Formatting.DARK_AQUA;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Purple")) {
-            return TextFormatting.DARK_PURPLE;
+            return Formatting.DARK_PURPLE;
         }
         if (setting.getValue().equalsIgnoreCase("Gray")) {
-            return TextFormatting.GRAY;
+            return Formatting.GRAY;
         }
         if (setting.getValue().equalsIgnoreCase("Blue")) {
-            return TextFormatting.BLUE;
+            return Formatting.BLUE;
         }
         if (setting.getValue().equalsIgnoreCase("Light Purple")) {
-            return TextFormatting.LIGHT_PURPLE;
+            return Formatting.LIGHT_PURPLE;
         }
         if (setting.getValue().equalsIgnoreCase("White")) {
-            return TextFormatting.WHITE;
+            return Formatting.WHITE;
         }
         if (setting.getValue().equalsIgnoreCase("Aqua")) {
-            return TextFormatting.AQUA;
+            return Formatting.AQUA;
         }
         return null;
     }
 
-    public static ChatFormatting textToChatFormatting(ModeSetting setting) {
+    public static Formatting textToChatFormatting(ModeSetting setting) {
         if (setting.getValue().equalsIgnoreCase("Black")) {
-            return ChatFormatting.BLACK;
+            return Formatting.BLACK;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Green")) {
-            return ChatFormatting.DARK_GREEN;
+            return Formatting.DARK_GREEN;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Red")) {
-            return ChatFormatting.DARK_RED;
+            return Formatting.DARK_RED;
         }
         if (setting.getValue().equalsIgnoreCase("Gold")) {
-            return ChatFormatting.GOLD;
+            return Formatting.GOLD;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Gray")) {
-            return ChatFormatting.DARK_GRAY;
+            return Formatting.DARK_GRAY;
         }
         if (setting.getValue().equalsIgnoreCase("Green")) {
-            return ChatFormatting.GREEN;
+            return Formatting.GREEN;
         }
         if (setting.getValue().equalsIgnoreCase("Red")) {
-            return ChatFormatting.RED;
+            return Formatting.RED;
         }
         if (setting.getValue().equalsIgnoreCase("Yellow")) {
-            return ChatFormatting.YELLOW;
+            return Formatting.YELLOW;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Blue")) {
-            return ChatFormatting.DARK_BLUE;
+            return Formatting.DARK_BLUE;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Aqua")) {
-            return ChatFormatting.DARK_AQUA;
+            return Formatting.DARK_AQUA;
         }
         if (setting.getValue().equalsIgnoreCase("Dark Purple")) {
-            return ChatFormatting.DARK_PURPLE;
+            return Formatting.DARK_PURPLE;
         }
         if (setting.getValue().equalsIgnoreCase("Gray")) {
-            return ChatFormatting.GRAY;
+            return Formatting.GRAY;
         }
         if (setting.getValue().equalsIgnoreCase("Blue")) {
-            return ChatFormatting.BLUE;
+            return Formatting.BLUE;
         }
         if (setting.getValue().equalsIgnoreCase("Light Purple")) {
-            return ChatFormatting.LIGHT_PURPLE;
+            return Formatting.LIGHT_PURPLE;
         }
         if (setting.getValue().equalsIgnoreCase("White")) {
-            return ChatFormatting.WHITE;
+            return Formatting.WHITE;
         }
         if (setting.getValue().equalsIgnoreCase("Aqua")) {
-            return ChatFormatting.AQUA;
+            return Formatting.AQUA;
         }
         return null;
     }

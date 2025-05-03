@@ -8,6 +8,7 @@ import java.util.function.BiFunction;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
+import net.minecraft.client.MinecraftClient;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
@@ -71,7 +72,8 @@ import com.lukflug.panelstudio.theme.IThemeMultiplexer;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiInventory;
-import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.GlStateManager;
+import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
@@ -93,14 +95,14 @@ public class GameSenseGUI extends MinecraftHUDGUI {
         guiInterface = new GUIInterface(true) {
             @Override
             public void drawString(Point pos, int height, String s, Color c) {
-                GlStateManager.pushMatrix();
-                GlStateManager.translate(pos.x,pos.y,0);
+                RenderSystem.pushMatrix();
+                RenderSystem.translate(pos.x,pos.y,0);
                 double scale=height/(double)(FontUtil.getFontHeight(colorMain.customFont.getValue())+(colorMain.customFont.getValue()?1:0));
                 end(false);
                 FontUtil.drawStringWithShadow(colorMain.customFont.getValue(),s,0,0,new GSColor(c));
                 begin(false);
-                GlStateManager.scale(scale,scale,1);
-                GlStateManager.popMatrix();
+                RenderSystem.scale(scale,scale,1);
+                RenderSystem.popMatrix();
             }
 
             @Override
@@ -621,43 +623,43 @@ public class GameSenseGUI extends MinecraftHUDGUI {
 
     public static void renderItem(ItemStack item, Point pos) {
         GameSense.INSTANCE.gameSenseGUI.getInterface().end(false);
-        GlStateManager.enableTexture2D();
-        GlStateManager.depthMask(true);
+        RenderSystem.enableTexture2D();
+        RenderSystem.depthMask(true);
         GL11.glPushAttrib(GL11.GL_SCISSOR_BIT);
         GL11.glDisable(GL11.GL_SCISSOR_TEST);
-        GlStateManager.clear(GL11.GL_DEPTH_BUFFER_BIT);
+        RenderSystem.clear(GL11.GL_DEPTH_BUFFER_BIT);
         GL11.glPopAttrib();
-        GlStateManager.enableDepth();
-        GlStateManager.disableAlpha();
-        GlStateManager.pushMatrix();
-        Minecraft.getMinecraft().getRenderItem().zLevel = -150.0f;
+        RenderSystem.enableDepth();
+        RenderSystem.disableAlpha();
+        RenderSystem.pushMatrix();
+        MinecraftClient.getInstance().getRenderItem().zLevel = -150.0f;
         RenderHelper.enableGUIStandardItemLighting();
-        Minecraft.getMinecraft().getRenderItem().renderItemAndEffectIntoGUI(item, pos.x, pos.y);
-        Minecraft.getMinecraft().getRenderItem().renderItemOverlays(Minecraft.getMinecraft().fontRenderer, item, pos.x, pos.y);
+        MinecraftClient.getInstance().getRenderItem().renderItemAndEffectIntoGUI(item, pos.x, pos.y);
+        MinecraftClient.getInstance().getRenderItem().renderItemOverlays(MinecraftClient.getInstance().fontRenderer, item, pos.x, pos.y);
         RenderHelper.disableStandardItemLighting();
-        Minecraft.getMinecraft().getRenderItem().zLevel = 0.0F;
-        GlStateManager.popMatrix();
-        GlStateManager.disableDepth();
-        GlStateManager.depthMask(false);
+        MinecraftClient.getInstance().getRenderItem().zLevel = 0.0F;
+        RenderSystem.popMatrix();
+        RenderSystem.disableDepth();
+        RenderSystem.depthMask(false);
         GameSense.INSTANCE.gameSenseGUI.getInterface().begin(false);
     }
 
     public static void renderEntity(EntityLivingBase entity, Point pos, int scale) {
         GameSense.INSTANCE.gameSenseGUI.getInterface().end(false);
-        GlStateManager.enableTexture2D();
-        GlStateManager.depthMask(true);
+        RenderSystem.enableTexture2D();
+        RenderSystem.depthMask(true);
         GL11.glPushAttrib(GL11.GL_SCISSOR_BIT);
         GL11.glDisable(GL11.GL_SCISSOR_TEST);
-        GlStateManager.clear(GL11.GL_DEPTH_BUFFER_BIT);
+        RenderSystem.clear(GL11.GL_DEPTH_BUFFER_BIT);
         GL11.glPopAttrib();
-        GlStateManager.enableDepth();
-        GlStateManager.disableAlpha();
-        GlStateManager.pushMatrix();
-        GlStateManager.color(1, 1, 1, 1);
+        RenderSystem.enableDepth();
+        RenderSystem.disableAlpha();
+        RenderSystem.pushMatrix();
+        RenderSystem.color(1, 1, 1, 1);
         GuiInventory.drawEntityOnScreen(pos.x, pos.y, scale, 28, 60, entity);
-        GlStateManager.popMatrix();
-        GlStateManager.disableDepth();
-        GlStateManager.depthMask(false);
+        RenderSystem.popMatrix();
+        RenderSystem.disableDepth();
+        RenderSystem.depthMask(false);
         GameSense.INSTANCE.gameSenseGUI.getInterface().begin(false);
     }
 

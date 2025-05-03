@@ -3,14 +3,14 @@ package com.gamesense.api.util.misc;
 import com.gamesense.client.module.ModuleManager;
 import com.gamesense.client.module.modules.hud.Notifications;
 //import com.mojang.realmsclient.gui.ChatFormatting;
-import net.minecraft.network.message.LastSeenMessageList;
+//import net.minecraft.network.message.LastSeenMessageList;
 import net.minecraft.util.Formatting;
 
 //import net.minecraft.client.Minecraft;
 import net.minecraft.client.MinecraftClient;
 
 //import net.minecraft.network.play.client.CPacketChatMessage;
-import net.minecraft.network.packet.c2s.play.ChatMessageC2SPacket;
+//import net.minecraft.network.packet.c2s.play.ChatMessageC2SPacket;
 
 //import net.minecraft.util.text.TextComponentString;
 import net.minecraft.text.Text;

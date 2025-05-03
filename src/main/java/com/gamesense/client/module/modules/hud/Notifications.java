@@ -15,7 +15,9 @@ import com.lukflug.panelstudio.hud.ListComponent;
 import com.lukflug.panelstudio.setting.Labeled;
 import com.lukflug.panelstudio.theme.ITheme;
 
-import net.minecraft.util.text.TextComponentString;
+//import net.minecraft.util.text.TextComponentString;
+import net.minecraft.text.Text;
+
 
 @Module.Declaration(name = "Notifications", category = Category.HUD)
 @HUDModule.Declaration(posX = 0, posZ = 50)
@@ -45,7 +47,7 @@ public class Notifications extends HUDModule {
             list.list.remove(0);
     }
 
-    public void addMessage(TextComponentString m) {
+    public void addMessage(Text m) {
         if (list.list.size() < 3) {
             list.list.remove(m);
             list.list.add(m);
@@ -58,7 +60,8 @@ public class Notifications extends HUDModule {
 
     private static class NotificationsList implements HUDList {
 
-        public List<TextComponentString> list = new ArrayList<>();
+//        public List<TextComponentString> list = new ArrayList<>();
+        public List<Text> list = new ArrayList<>();
 
         @Override
         public int getSize() {
@@ -67,7 +70,7 @@ public class Notifications extends HUDModule {
 
         @Override
         public String getItem(int index) {
-            return list.get(index).getText();
+            return list.get(index).getString(); // Changed from getText() to getString()
         }
 
         @Override

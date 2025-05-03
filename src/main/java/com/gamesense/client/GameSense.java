@@ -13,7 +13,6 @@ import me.zero.alpine.bus.EventManager;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import net.minecraft.client.MinecraftClient;
 
 import java.awt.*;
 

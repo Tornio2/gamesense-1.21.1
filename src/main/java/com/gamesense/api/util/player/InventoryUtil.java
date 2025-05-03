@@ -7,7 +7,7 @@ import com.gamesense.client.module.modules.combat.OffHand;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockObsidian;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.init.Enchantments;
 import net.minecraft.init.Items;
@@ -21,7 +21,7 @@ import java.util.List;
 
 public class InventoryUtil {
 
-    private static final Minecraft mc = Minecraft.getMinecraft();
+    private static final MinecraftClient mc = MinecraftClient.getInstance();
 
     public static int findObsidianSlot(boolean offHandActived, boolean activeBefore) {
         int slot = -1;
