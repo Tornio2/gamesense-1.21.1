@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.function.IntPredicate;
 import java.util.function.Supplier;
 
-import com.lukflug.panelstudio.base.Animation;
-import com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Animation;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.ComponentBase;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
 

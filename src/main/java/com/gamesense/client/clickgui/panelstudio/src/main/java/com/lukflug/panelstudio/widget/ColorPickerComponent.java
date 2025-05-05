@@ -1,7 +1,7 @@
 package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.widget;
 
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.IColorSetting;
-import com.lukflug.panelstudio.theme.ThemeTuple;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.ThemeTuple;
 
 /**
  * Full color picker with field and slider.

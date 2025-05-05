@@ -1,13 +1,13 @@
 package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.widget;
 
-import com.lukflug.panelstudio.base.Animation;
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Animation;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.FocusableComponent;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.AnimatedEnum;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.IEnumSetting;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
-import com.lukflug.panelstudio.theme.IRadioRenderer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.IRadioRenderer;
 
 /**
  * Widget for radio button list.

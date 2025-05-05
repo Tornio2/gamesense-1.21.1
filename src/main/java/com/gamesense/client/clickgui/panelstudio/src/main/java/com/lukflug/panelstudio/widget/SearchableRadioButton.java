@@ -3,16 +3,16 @@ package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.pane
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 
-import com.lukflug.panelstudio.base.Animation;
-import com.lukflug.panelstudio.base.IBoolean;
-import com.lukflug.panelstudio.base.SimpleToggleable;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Animation;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IBoolean;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.SimpleToggleable;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.container.VerticalContainer;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.IEnumSetting;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.IStringSetting;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.Labeled;
-import com.lukflug.panelstudio.theme.IContainerRenderer;
-import com.lukflug.panelstudio.theme.ThemeTuple;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.IContainerRenderer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.ThemeTuple;
 
 /**
  * Radio list that can be searched via a search bar.

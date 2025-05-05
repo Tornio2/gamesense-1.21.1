@@ -1,6 +1,6 @@
 package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme;
 
-import com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
 
 /**
  * Interface to render the border of resizable components.

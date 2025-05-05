@@ -3,10 +3,10 @@ package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.pane
 import java.awt.Point;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.component.IComponent;
-import com.lukflug.panelstudio.setting.ILabeled;
-import com.lukflug.panelstudio.theme.IContainerRenderer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.IComponent;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.IContainerRenderer;
 
 /**
  * Container with contents arranged vertically.

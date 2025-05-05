@@ -1,7 +1,7 @@
 package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.container;
 
-import com.lukflug.panelstudio.base.IBoolean;
-import com.lukflug.panelstudio.component.IComponent;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IBoolean;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.IComponent;
 
 /**
  * Interface representing container of components.

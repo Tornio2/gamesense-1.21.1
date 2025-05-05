@@ -2,7 +2,7 @@ package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.pane
 
 import java.util.function.Consumer;
 
-import com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
 
 /**
  * Component proxy that manages focus.

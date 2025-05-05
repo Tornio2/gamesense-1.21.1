@@ -5,12 +5,12 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.IntSupplier;
 import java.util.function.Supplier;
 
-import com.lukflug.panelstudio.base.AnimatedToggleable;
-import com.lukflug.panelstudio.base.Animation;
-import com.lukflug.panelstudio.base.ConstantToggleable;
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.IInterface;
-import com.lukflug.panelstudio.base.IToggleable;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.AnimatedToggleable;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Animation;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.ConstantToggleable;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IToggleable;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.CollapsibleComponent;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.ComponentProxy;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.DraggableComponent;
@@ -21,8 +21,8 @@ import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panel
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.PopupComponent;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.container.VerticalContainer;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.Labeled;
-import com.lukflug.panelstudio.theme.IPanelRenderer;
-import com.lukflug.panelstudio.theme.RendererTuple;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.IPanelRenderer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.RendererTuple;
 
 /**
  * A panel that can be opened and closed.

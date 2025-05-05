@@ -5,9 +5,9 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
 
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.IBoolean;
-import com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IBoolean;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
 
 /**
@@ -207,7 +207,7 @@ public class ClearTheme extends ThemeBase {
 			@Override
 			public int renderScrollBar (Context context, boolean focus, T state, boolean horizontal, int height, int position) {
 				ClearTheme.this.renderBackground(context,focus,graphicalLevel);
-				Color color= combineColors(scheme.getColor("Scroll Bar Color"),getBackgroundColor(focus));
+				Color color= ITheme.combineColors(scheme.getColor("Scroll Bar Color"),getBackgroundColor(focus));
 				if (horizontal) {
 					int a=(int)(position/(double)height*context.getSize().width);
 					int b=(int)((position+context.getSize().width)/(double)height*context.getSize().width);
@@ -468,7 +468,7 @@ public class ClearTheme extends ThemeBase {
 				renderOverlay(context);
 				context.getInterface().drawString(new Point(context.getPos().x+padding,context.getPos().y+padding),height,title+separator+(state?"On":"Off"),getFontColor(focus));
 				Color color=state?scheme.getColor("Enabled Color"):scheme.getColor("Disabled Color");
-				Color fillColor= combineColors(color,getBackgroundColor(effFocus));
+				Color fillColor= ITheme.combineColors(color,getBackgroundColor(effFocus));
 				Rectangle rect=state?getOnField(context):getOffField(context);
 				context.getInterface().fillRect(rect,fillColor,fillColor,fillColor,fillColor);
 				rect=context.getRect();

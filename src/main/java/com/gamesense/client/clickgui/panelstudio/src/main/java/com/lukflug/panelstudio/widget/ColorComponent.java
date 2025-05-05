@@ -2,14 +2,14 @@ package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.pane
 
 import java.awt.Color;
 
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.IBoolean;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IBoolean;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.container.VerticalContainer;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.IBooleanSetting;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.IColorSetting;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.INumberSetting;
-import com.lukflug.panelstudio.theme.ITheme;
-import com.lukflug.panelstudio.theme.ThemeTuple;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.ITheme;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.ThemeTuple;
 
 /**
  * Component representing a color-valued setting.

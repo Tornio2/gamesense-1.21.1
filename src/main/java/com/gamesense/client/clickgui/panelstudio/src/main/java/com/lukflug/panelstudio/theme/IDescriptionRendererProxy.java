@@ -2,7 +2,7 @@ package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.pane
 
 import java.awt.Point;
 
-import com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
 
 /**
  * Proxy redirecting calls.

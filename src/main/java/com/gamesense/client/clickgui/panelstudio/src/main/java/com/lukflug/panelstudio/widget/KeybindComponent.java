@@ -1,9 +1,9 @@
 package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.widget;
 
-import com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.FocusableComponent;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.IKeybindSetting;
-import com.lukflug.panelstudio.theme.IButtonRenderer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.IButtonRenderer;
 
 /**
  * Button representing a keybind.

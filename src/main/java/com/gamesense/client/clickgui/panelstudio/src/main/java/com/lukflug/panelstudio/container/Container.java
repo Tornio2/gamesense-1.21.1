@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.Description;
-import com.lukflug.panelstudio.base.IBoolean;
-import com.lukflug.panelstudio.component.ComponentBase;
-import com.lukflug.panelstudio.component.IComponent;
-import com.lukflug.panelstudio.setting.ILabeled;
-import com.lukflug.panelstudio.theme.IContainerRenderer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Description;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IBoolean;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.ComponentBase;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.IComponent;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.IContainerRenderer;
 
 /**
  * Base class for containers.

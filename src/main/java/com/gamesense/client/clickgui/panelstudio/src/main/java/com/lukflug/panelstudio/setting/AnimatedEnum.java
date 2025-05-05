@@ -1,6 +1,6 @@
 package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting;
 
-import com.lukflug.panelstudio.base.Animation;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Animation;
 
 public final class AnimatedEnum {
 	private final IEnumSetting setting;

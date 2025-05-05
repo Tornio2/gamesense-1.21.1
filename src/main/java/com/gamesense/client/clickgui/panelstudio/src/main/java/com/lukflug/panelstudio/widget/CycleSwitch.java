@@ -1,10 +1,10 @@
 package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.widget;
 
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.FocusableComponent;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.IEnumSetting;
-import com.lukflug.panelstudio.theme.ISwitchRenderer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.ISwitchRenderer;
 
 /**
  * Component representing an enumeration-valued setting which cycles in both directions, by pressing embedded buttons.

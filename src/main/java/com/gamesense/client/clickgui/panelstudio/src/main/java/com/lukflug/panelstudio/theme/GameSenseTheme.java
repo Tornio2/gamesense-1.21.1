@@ -5,8 +5,8 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
 
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
 
 /**
@@ -66,8 +66,8 @@ public class GameSenseTheme extends ThemeBase {
 	protected void fillBaseRect (Context context, boolean focus, boolean active, int logicalLevel, int graphicalLevel, Color colorState) {
 		Color color=getMainColor(focus,active);
 		if (logicalLevel>1 && !active) color=getBackgroundColor(focus);
-		else if (graphicalLevel<=0 && active) color= combineColors(getColor(scheme.getColor("Title Color")),scheme.getColor("Enabled Color"));
-		if (colorState!=null) color= combineColors(colorState,scheme.getColor("Enabled Color"));
+		else if (graphicalLevel<=0 && active) color= ITheme.combineColors(getColor(scheme.getColor("Title Color")),scheme.getColor("Enabled Color"));
+		if (colorState!=null) color= ITheme.combineColors(colorState,scheme.getColor("Enabled Color"));
 		context.getInterface().fillRect(context.getRect(),color,color,color,color);
 	}
 	
@@ -89,7 +89,7 @@ public class GameSenseTheme extends ThemeBase {
 				Color color=getMainColor(true,false);
 				inter.fillRect(rect,color,color,color,color);
 				inter.drawString(new Point(pos.x+2,pos.y+2),height,text,getFontColor(true));
-				drawRect(inter,rect,scheme.getColor("Outline Color"));
+				ITheme.drawRect(inter,rect,scheme.getColor("Outline Color"));
 			}
 		};
 	}
@@ -134,7 +134,7 @@ public class GameSenseTheme extends ThemeBase {
 			@Override
 			public void renderPanelOverlay (Context context, boolean focus, T state, boolean open) {
 				if (graphicalLevel==0) {
-					drawRect(context.getInterface(),context.getRect(),scheme.getColor("Outline Color"));
+					ITheme.drawRect(context.getInterface(),context.getRect(),scheme.getColor("Outline Color"));
 				}
 			}
 
@@ -347,7 +347,7 @@ public class GameSenseTheme extends ThemeBase {
 		return new IResizeBorderRenderer() {
 			@Override
 			public void drawBorder (Context context, boolean focus) {
-				Color color= combineColors(scheme.getColor("Outline Color"),scheme.getColor("Enabled Color"));
+				Color color= ITheme.combineColors(scheme.getColor("Outline Color"),scheme.getColor("Enabled Color"));
 				Rectangle rect=context.getRect();
 				context.getInterface().fillRect(new Rectangle(rect.x,rect.y,rect.width,getBorder()),color,color,color,color);
 				context.getInterface().fillRect(new Rectangle(rect.x,rect.y+rect.height-getBorder(),rect.width,getBorder()),color,color,color,color);
@@ -414,7 +414,7 @@ public class GameSenseTheme extends ThemeBase {
 					if (insertMode) context.getInterface().fillRect(new Rectangle(x1,rect.y+padding/2+height,x2-x1,1),textColor,textColor,textColor,textColor);
 					else context.getInterface().fillRect(new Rectangle(x1,rect.y+padding/2,1,height),textColor,textColor,textColor,textColor);
 				}
-				drawRect(context.getInterface(),rect,color);
+				ITheme.drawRect(context.getInterface(),rect,color);
 				context.getInterface().restore();
 				return boxPosition;
 			}
@@ -474,7 +474,7 @@ public class GameSenseTheme extends ThemeBase {
 				context.getInterface().fillRect(rect,fillColor,fillColor,fillColor,fillColor);
 				rect=context.getRect();
 				rect=new Rectangle(rect.x+rect.width-2*rect.height+3*padding,rect.y+padding,2*rect.height-4*padding,rect.height-2*padding);
-				drawRect(context.getInterface(),rect,color);
+				ITheme.drawRect(context.getInterface(),rect,color);
 			}
 
 			@Override
@@ -562,13 +562,13 @@ public class GameSenseTheme extends ThemeBase {
 
 	@Override
 	public Color getMainColor (boolean focus, boolean active) {
-		if (active) return combineColors(getColor(scheme.getColor("Enabled Color")),scheme.getColor("Enabled Color"));
-		else return combineColors(scheme.getColor("Disabled Color"),scheme.getColor("Enabled Color"));
+		if (active) return ITheme.combineColors(getColor(scheme.getColor("Enabled Color")),scheme.getColor("Enabled Color"));
+		else return ITheme.combineColors(scheme.getColor("Disabled Color"),scheme.getColor("Enabled Color"));
 	}
 
 	@Override
 	public Color getBackgroundColor (boolean focus) {
-		return combineColors(scheme.getColor("Settings Color"),scheme.getColor("Enabled Color"));
+		return ITheme.combineColors(scheme.getColor("Settings Color"),scheme.getColor("Enabled Color"));
 	}
 
 	@Override

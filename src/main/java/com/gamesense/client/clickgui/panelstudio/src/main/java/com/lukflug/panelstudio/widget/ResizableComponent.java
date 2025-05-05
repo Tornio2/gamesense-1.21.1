@@ -5,17 +5,17 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.util.function.Supplier;
 
-import com.lukflug.panelstudio.base.AnimatedToggleable;
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.AnimatedToggleable;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.IComponent;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.IFixedComponent;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.IFixedComponentProxy;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.IResizable;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.IScrollSize;
-import com.lukflug.panelstudio.config.IPanelConfig;
-import com.lukflug.panelstudio.theme.IResizeBorderRenderer;
-import com.lukflug.panelstudio.theme.RendererTuple;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.config.IPanelConfig;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.IResizeBorderRenderer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.RendererTuple;
 
 /**
  * A fixed component that can be resized.

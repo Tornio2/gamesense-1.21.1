@@ -4,7 +4,7 @@ import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panel
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.IBooleanSetting;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.IColorSetting;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.INumberSetting;
-import com.lukflug.panelstudio.theme.ThemeTuple;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.ThemeTuple;
 
 /**
  * Returns color component consisting of sliders.

@@ -1,6 +1,7 @@
 package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.tabgui;
 
-import com.lukflug.panelstudio.popup.IPopupPositioner;
+
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.popup.IPopupPositioner;
 
 /**
  * Interface for rendering a TabGUI.

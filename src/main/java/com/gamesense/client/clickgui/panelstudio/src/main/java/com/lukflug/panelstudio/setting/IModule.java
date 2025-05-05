@@ -2,7 +2,7 @@ package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.pane
 
 import java.util.stream.Stream;
 
-import com.lukflug.panelstudio.base.IToggleable;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IToggleable;
 
 /**
  * Interface representing a module.

@@ -1,8 +1,8 @@
 package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component;
 
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.Description;
-import com.lukflug.panelstudio.setting.ILabeled;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Description;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
 
 /**
  * Base class for components.

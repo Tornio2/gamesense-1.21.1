@@ -2,10 +2,10 @@ package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.pane
 
 import java.util.function.Supplier;
 
-import com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.ComponentBase;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
-import com.lukflug.panelstudio.theme.IEmptySpaceRenderer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.IEmptySpaceRenderer;
 
 /**
  * Component that is supposed to function as the corner for scrollable components or other sorts of blank spaces.

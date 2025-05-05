@@ -5,8 +5,8 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
 
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
 
 /**
@@ -206,7 +206,7 @@ public class ImpactTheme extends ThemeBase {
 			@Override
 			public void renderPanelOverlay (Context context, boolean focus, T state, boolean open) {
 				Color color=graphicalLevel<=0?scheme.getColor("Panel Outline Color"):scheme.getColor("Component Outline Color");
-				drawRect(context.getInterface(),context.getRect(),color);
+				ITheme.drawRect(context.getInterface(),context.getRect(),color);
 			}
 
 			@Override
@@ -253,7 +253,7 @@ public class ImpactTheme extends ThemeBase {
 				}
 				if (!container) {
 					Color color=graphicalLevel<=0?scheme.getColor("Panel Outline Color"):scheme.getColor("Component Outline Color");
-					drawRect(context.getInterface(),context.getRect(),color);
+					ITheme.drawRect(context.getInterface(),context.getRect(),color);
 					renderOverlay(context);
 				}
 				int colorLevel=1;
@@ -312,7 +312,7 @@ public class ImpactTheme extends ThemeBase {
 				}
 				if (!container) {
 					Color color=graphicalLevel<=0?scheme.getColor("Panel Outline Color"):scheme.getColor("Component Outline Color");
-					drawRect(context.getInterface(),context.getRect(),color);
+					ITheme.drawRect(context.getInterface(),context.getRect(),color);
 					renderOverlay(context);
 				}
 				renderOverlay(context);
@@ -340,7 +340,7 @@ public class ImpactTheme extends ThemeBase {
 				}
 				if (!container) {
 					Color color=graphicalLevel<=0?scheme.getColor("Panel Outline Color"):scheme.getColor("Component Outline Color");
-					drawRect(context.getInterface(),context.getRect(),color);
+					ITheme.drawRect(context.getInterface(),context.getRect(),color);
 					renderOverlay(context);
 				}
 				Color valueColor=scheme.getColor("Active Font Color");
@@ -375,7 +375,7 @@ public class ImpactTheme extends ThemeBase {
 				}
 				if (!container) {
 					Color color=graphicalLevel<=0?scheme.getColor("Panel Outline Color"):scheme.getColor("Component Outline Color");
-					drawRect(context.getInterface(),context.getRect(),color);
+					ITheme.drawRect(context.getInterface(),context.getRect(),color);
 					renderOverlay(context);
 				}
 				Rectangle rect=context.getRect();
@@ -506,7 +506,7 @@ public class ImpactTheme extends ThemeBase {
 				if (graphicalLevel<=0) renderBackground(context,effFocus);
 				if (!container) {
 					Color color=graphicalLevel<=0?scheme.getColor("Panel Outline Color"):scheme.getColor("Component Outline Color");
-					drawRect(context.getInterface(),context.getRect(),color);
+					ITheme.drawRect(context.getInterface(),context.getRect(),color);
 					renderOverlay(context);
 				}
 				// Declare and assign variables
@@ -607,7 +607,7 @@ public class ImpactTheme extends ThemeBase {
 				}
 				if (!container) {
 					Color color=graphicalLevel<=0?scheme.getColor("Panel Outline Color"):scheme.getColor("Component Outline Color");
-					drawRect(context.getInterface(),context.getRect(),color);
+					ITheme.drawRect(context.getInterface(),context.getRect(),color);
 					renderOverlay(context);
 				}
 				renderOverlay(context);
@@ -617,7 +617,7 @@ public class ImpactTheme extends ThemeBase {
 				context.getInterface().fillRect(rect,fillColor,fillColor,fillColor,fillColor);
 				rect=context.getRect();
 				rect=new Rectangle(rect.x+rect.width-2*rect.height+3*padding,rect.y+padding,2*rect.height-4*padding,rect.height-2*padding);
-				drawRect(context.getInterface(),rect,scheme.getColor("Component Outline Color"));
+				ITheme.drawRect(context.getInterface(),rect,scheme.getColor("Component Outline Color"));
 			}
 
 			@Override
@@ -655,7 +655,7 @@ public class ImpactTheme extends ThemeBase {
 				}
 				if (!container) {
 					Color color=graphicalLevel<=0?scheme.getColor("Panel Outline Color"):scheme.getColor("Component Outline Color");
-					drawRect(context.getInterface(),subContext.getRect(),color);
+					ITheme.drawRect(context.getInterface(),subContext.getRect(),color);
 					renderOverlay(subContext);
 				}
 				Color valueColor=getFontColor(effFocus);

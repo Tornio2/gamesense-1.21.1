@@ -3,7 +3,7 @@ package com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.pane
 import java.awt.Color;
 import java.awt.Rectangle;
 
-import com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
 
 /**
  * Interface representing a GUI theme (i.e. skin).

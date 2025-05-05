@@ -7,18 +7,18 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Consumer;
 
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.Description;
-import com.lukflug.panelstudio.base.IInterface;
-import com.lukflug.panelstudio.base.IToggleable;
-import com.lukflug.panelstudio.component.IFixedComponent;
-import com.lukflug.panelstudio.config.IConfigList;
-import com.lukflug.panelstudio.config.IPanelConfig;
-import com.lukflug.panelstudio.popup.IPopup;
-import com.lukflug.panelstudio.popup.IPopupDisplayer;
-import com.lukflug.panelstudio.popup.IPopupPositioner;
-import com.lukflug.panelstudio.setting.ILabeled;
-import com.lukflug.panelstudio.theme.IContainerRenderer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Description;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IToggleable;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.component.IFixedComponent;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.config.IConfigList;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.config.IPanelConfig;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.popup.IPopup;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.popup.IPopupDisplayer;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.popup.IPopupPositioner;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.theme.IContainerRenderer;
 
 /**
  * Container with contents arranged at will.

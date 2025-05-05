@@ -6,9 +6,9 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.util.function.IntSupplier;
 
-import com.lukflug.panelstudio.base.Context;
-import com.lukflug.panelstudio.base.IBoolean;
-import com.lukflug.panelstudio.base.IInterface;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.Context;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IBoolean;
+import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.base.IInterface;
 import com.gamesense.client.clickgui.panelstudio.src.main.java.com.lukflug.panelstudio.setting.ILabeled;
 
 /**
@@ -418,7 +418,7 @@ public class RainbowTheme extends ThemeBase {
 				Rectangle rect=getTextArea(context,title);
 				int strlen=context.getInterface().getFontWidth(height,content.substring(0,position));
 				context.getInterface().fillRect(rect,new Color(0,0,0,64),new Color(0,0,0,64),new Color(0,0,0,64),new Color(0,0,0,64));
-				drawRect(context.getInterface(),rect,new Color(0,0,0,64));
+				ITheme.drawRect(context.getInterface(),rect,new Color(0,0,0,64));
 				// Deal with box render offset
 				if (boxPosition<position) {
 					int minPosition=boxPosition;
@@ -513,7 +513,7 @@ public class RainbowTheme extends ThemeBase {
 				context.getInterface().fillRect(rect,color,color,color,color);
 				rect=context.getRect();
 				rect=new Rectangle(rect.x+rect.width-2*rect.height+3*padding,rect.y+padding,2*rect.height-4*padding,rect.height-2*padding);
-				drawRect(context.getInterface(),rect,color);
+				ITheme.drawRect(context.getInterface(),rect,color);
 			}
 
 			@Override
