@@ -29,7 +29,8 @@ public class VersionChecker {
         }
 
         try {
-            URL url = new URL("https://raw.githubusercontent.com/IUDevman/gamesense-assets/main/files/versioncontrol.txt");
+//            URL url = new URL("https://raw.githubusercontent.com/IUDevman/gamesense-assets/main/files/versioncontrol.txt");
+            URL url = new URL("https://raw.githubusercontent.com/Tornio2/gamesense-1.21.1/refs/heads/master/versioncontrol.txt");
             Scanner scanner = new Scanner(url.openStream());
 
             String grabbedVersion = scanner.next();

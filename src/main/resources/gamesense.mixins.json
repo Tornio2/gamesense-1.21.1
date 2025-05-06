@@ -13,6 +13,7 @@
 		"mixins.MixinRenderTickCounter",
 		"mixins.MixinTimer",
 		"mixins.accessors.AccessorEntityPlayerSP",
-		"mixins.accessors.MinecraftClientAccessor"
+		"mixins.accessors.MinecraftClientAccessor",
+		"mixins.accessors.IPlayerMoveC2SPacket"
 	]
 }
